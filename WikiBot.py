@@ -23,7 +23,7 @@ for item in mylist:
     }
 
     header = {
-    'authorization' : "MjYzMDg3MDAzNzcwMjkwMTc2.YDbSrA.uinASMbiD3uR6VYPFKtGqGkt2N0"
+    'authorization' : ""
     }
     print(item)
     r =  requests.post(spammer, data=payload, headers=header)
