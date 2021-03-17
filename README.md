@@ -1,2 +1,2 @@
-# DiscordWikiSpam
+# Discord WikiSpam Bot
  
