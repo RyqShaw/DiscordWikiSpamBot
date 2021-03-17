@@ -23,3 +23,4 @@ for item in WikiList:
     print(item)
     r =  requests.post(spammer, data=payload, headers=header)
     time.sleep(0.75)
+# Jay wuz here
