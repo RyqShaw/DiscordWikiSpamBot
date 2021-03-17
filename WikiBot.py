@@ -14,17 +14,12 @@ print("Bot Activated: Check Discord")
 result = wikipedia.summary("League of Legends", sentences = 20)
 
 #Taking results make list
-mylist = result.split()
+WikiList = result.split()
 
 #Printing Each individual item in list to console and Discord
-for item in mylist:
-    payload = {
-    'content' : ':flushed:'+item+':flushed:'
-    }
-
-    header = {
-    'authorization' : ""
-    }
+for item in WikiList:
+    payload = {'content' : "<@!> " + " :flushed:" + item + ":flushed:"}
+    header = {'authorization' : ""}
     print(item)
     r =  requests.post(spammer, data=payload, headers=header)
-    time.sleep(1)
+    time.sleep(0.75)
